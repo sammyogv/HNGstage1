@@ -60,7 +60,7 @@ cd profile-card
 **Example submission:**
 ```
 GitHub Repo: https://github.com/sammyogv/HNGstage0
-Live URL:
+Live URL: https://samuelprofilecard.netlify.app/
 
 
 
