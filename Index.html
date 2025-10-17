@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>HNG0 - Profile Card</title>
+    
+</head>
+<body>
+    <article data-testid="test-profile-card">
+        <header data-testid="test-user-name">
+            Samuel Chiemerie Ogbu
+        </header>
+
+        <div class="card-content">
+            <!-- Avatar Section -->
+            <figure data-testid="test-user-avatar-container">
+
+                <input 
+                    type="file" 
+                    id="avatarUpload" 
+                    accept="image/*"
+                    style="display: none;"
+                >
+
+                
+                <img 
+                    data-testid="test-user-avatar"
+                    src= "assets/avatar.jpg"
+                    alt="Samuel Chiemerie Ogbu"
+                >
+
+                <figcaption>Frontend Developer</figcaption>
+
+                <label for="avatarUpload" style="cursor: pointer; margin-bottom: 0.5rem;">
+                    <span style="color: #667eea; font-weight: 600; font-size: 0.85rem;">
+                        📷 Change Avatar
+                    </span>
+                </label>
+            </figure>
+
+            <!-- Info Section -->
+            <div class="info-section">
+                <!-- Bio -->
+                <p data-testid="test-user-bio">
+                    Passionate about pioneering innovative frontend technologies for seamless user experiences.
+                    
+                </p>
+
+                <!-- Time -->
+                <div class="time-display">
+                    Current time (ms): <span data-testid="test-user-time" id="currentTime">0</span>
+                </div>
+
+                <!-- Social Links -->
+                <nav data-testid="test-user-social-links">
+                    <ul>
+                        <li><a href="https://x.com/Analyst887" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter" title="Twitter">Twitter</a></li>
+                        <li><a href="https://github.com/sammyogv" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github" title="GitHub">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/analyst-ogbusamuel/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin" title="LinkedIn">LinkedIn</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Hobbies -->
+                <section>
+                    <h3>Hobbies</h3>
+                    <ul data-testid="test-user-hobbies">
+                        <li>Coding</li>
+                        <li>Chess</li>
+                        <li>Reading</li>
+                    </ul>
+                </section>
+
+                <!-- Dislikes -->
+                <section>
+                    <h3>Dislikes</h3>
+                    <ul data-testid="test-user-dislikes">
+                        <li>Bugs</li>
+                        <li>Noise</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </article>
+
+    <script src="script.js"></script>
+</body>
+</html>
