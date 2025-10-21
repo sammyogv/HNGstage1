@@ -6,6 +6,7 @@
 body{
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: auto;
@@ -15,6 +16,38 @@ body{
     
     
     
+}
+
+.navigation{
+    max-width: 600px;
+    width: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin-bottom: 1rem;
+    border-radius: 15px;
+
+}
+
+.navigation ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+    margin: 0;
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.navigation ul li a:hover,
+.navigation ul li a.active{
+    background: rgba(255, 255, 255, 0.2);
 }
 
 article[data-testid="test-profile-card"]{
@@ -228,7 +261,26 @@ section ul li{
         text-align: center;
 
     }
+
+    .navigation ul li a{
+        font-size: 0.5rem;
+    }
+
+    header[data-testid="test-user-name"]{
+        font-size: 1rem;
+    }
+
 }
+
+@media(max-width:300px){
+    .navigation ul li a{
+        font-size: 0.3rem;
+        
+    }
+}
+
+
+
 
 
 

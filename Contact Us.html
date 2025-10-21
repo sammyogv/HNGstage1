@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navigation">
+        <ul>
+            <li><a href="Index.html" >Profile</a></li>
+            <li><a href="Contact Us.html" class="active">Contact Us</a></li>
+            <li><a href="About Me.html">About Me </a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <header>
+            <h1>Contact Us</h1>
+            <p>We would love to hear from you!</p>
+
+        </header>
+
+        <section id="success" style="display:none"
+        data-testid="test-contact-success"
+        >
+            Thank you! Your message has been sent successfully.
+        </section>
+
+        <form action="" novalidate id="contactForm">
+            <section id="name" class="group">
+                <label for="contact-name">Full Name</label>
+                <input 
+                type="text"
+                id="Contact-name"
+                data-testid="test-contact-name"
+                required
+                aria-describedby="errorName"
+                >
+               
+            </section>
+             <span id="errorName" 
+                data-testid="test-contact-error-name"
+                class="error-message" 
+                style="display:none" 
+                role="alert">
+            </span>
+
+            <section id="email" class="group">
+                <label for="contact-email">Email</label>
+                <input type="text"
+                id="contact-email"
+                data-testid="test-contact-email"
+                required
+                aria-describedby="errorEmail"
+                >
+                
+            </section>
+            <span id="errorEmail" 
+                data-testid="test-contact-error-email"
+                class="error-message" 
+                style="display:none" 
+                role="alert">
+            </span>
+
+            <section id="subject" class="group">
+                <label for="contact-subject">Subject</label>
+                <input 
+                type="text"
+                id="contact-subject"
+                data-testid="test-contact-subject"
+                required
+                aria-describedby="errorSubject"
+                >
+                
+            </section>
+            <span id="errorSubject" 
+                class="error-message" 
+                data-testid="test-contact-error-subject"
+                style="display:none" 
+                role="alert">
+            </span>
+
+            <section id="message" class="group">
+                <label for="contact-message">Message</label>
+                <textarea 
+                id="contact-message"
+                rows="5"
+                maxlength="140"
+                data-testid="test-contact-message"
+                required
+                aria-describedby="errorMessage"
+                ></textarea>
+                
+            </section>
+
+            <span id="errorMessage" 
+                class="error-message" 
+                data-testid="test-contact-error-message"
+                style="display:none" 
+                role="alert">
+            </span>
+
+            <section id="submit"  class="group">
+                <button type="submit" class="submit-btn"
+                data-testid="test-contact-submit"
+                >Send Message</button>
+            </section>
+
+        </form>
+
+
+    </main>
+
+    <script src="contact.js"></script>
+</body>
+</html>
