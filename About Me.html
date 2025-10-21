@@ -3,13 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="aboutus.css">
     <title>Document</title>
 </head>
 <body>
+    <nav class="navigation">
+        <ul>
+            <li><a href="Index.html" >Profile</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+            <li><a href="About Me.html" class="active">About Me </a></li>
+        </ul>
+    </nav>
+
+    <main id="about-page" data-testid="test-about-page">
+        <header>
+            <h2>About Me</h2>
+        </header>
+
+        <section id="about-bio" data-testid="test-about-bio">
+            <h3>My Bio</h3>
+            <p>
+                Hello! I'm Samuel Chiemerie Ogbu, a passionate Frontend Developer 
+                dedicated to crafting seamless and engaging user experiences. 
+                With a keen eye for design and a love for coding, 
+                I specialize in transforming ideas into interactive digital realities.
+            </p>
+        </section>
+
+        <section data-testid="test-about-goals" id="about-goals">
+                <h3>My Goals in This Program</h3>
+                <ul>
+                    <li>Master modern frontend frameworks and tools (React, Vue, TypeScript)</li>
+                    <li>Build a strong foundation in accessibility and inclusive design</li>
+                    <li>Learn industry-standard best practices for scalable, maintainable code</li>
+                    <li>Collaborate with other developers and contribute to real-world projects</li>
+                    <li>Develop a portfolio of projects that showcase my skills and creativity</li>
+                    <li>Connect with mentors and build a professional network in tech</li>
+                </ul>
+            </section>
+
+        <section id="about-confidence" data-testid="test-about-confidence">
+            <h3>Areas to work on</h3>
+            <ul>
+                <li>End points integration</li>
+                <li>Backend development basics</li>
+                <li>Advanced state management</li>
+            </ul>
+        </section>
+
+        <section id="about-future-note" data-testid="test-about-future-note">
+            <h3>Note to future self</h3>
+            <p>Keep pushing your limits and never stop learning!</p>
+        </section>
+
+        <section id="about-extra" data-testid="test-about-extra">
+            <h3>Extra Thoughts</h3>
+            <p>Always strive for improvement and stay curious!</p>
+        </section>
+
+    </main>
     
 
-    <script src="about.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

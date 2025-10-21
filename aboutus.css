@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 1rem;
+    
+    margin:0;
+    
+    
+    
+}
+
+.navigation{
+    max-width: 600px;
+    width: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin-bottom: 1rem;
+    border-radius: 15px;
+
+}
+
+.navigation ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+    margin: 0;
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.navigation ul li a:hover,
+.navigation ul li a.active{
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+main{
+    background-color: white;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    overflow: hidden;
+    border-radius: 10px;
+    gap: 1rem;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn{
+
+    from{
+        opacity:0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+
+header{
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+}
+
+h3{
+    font-size: 1.5rem;
+    width: 100%;
+    background: linear-gradient(135deg,  #667eea 0%, rgba(0, 89, 255, 1) 100%);
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 1px;
+    text-align: left;
+    padding-left: 5px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+@media(max-width: 350px){
+    h3{
+        font-size: 1rem;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+    .navigation ul li a{
+        font-size: 0.5rem;
+        padding: 0.3rem 0.6rem;
+    }
+    p{
+        font-size: 0.5rem;
+    }
+
+    section ul li{
+        font-size: 0.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
